@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Completely unncessary page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timed Typing Test App</title>
+    <script src="penguin.js" async></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.glitch.com/0569e479-2ef8-4218-8629-458302c4ad4d%2FArknightsCNEmperor.jpg?v=1618813714241">
+</head>
+<body style="font-family:Poppins">
+  <div class="flexbox">
+    <div  class="flexbox-item">
+       <div id="scores" style="max-width:600px;z-index:9999;left:100px;top:0px;display:none;">
+              <table>  
+                <thead>
+                  <tr>
+                    <th colspan="4">Big E's stats</th>
+                  </tr>
+                </thead>
+                <tbody style="color:white;">
+                  <tr><td>Section</td><td>Percentage</td><td>Errors</td><td>Time</td></tr>
+                </tbody>  
+              </table>
+                        
+            </div>  
+      <div style="z-index:9999;" id="visual-text">
+      </div><!-- #origin-text -->
+      <img class="BigE" src="https://cdn.glitch.com/0569e479-2ef8-4218-8629-458302c4ad4d%2FArknightsCNEmperor.jpg?v=1618813714241">
+    </div>
+    <div class="flexbox-item" style="background-size:cover;background-repeat:no-repeat;background-image:url(https://cdn.glitch.com/0569e479-2ef8-4218-8629-458302c4ad4d%2FLoyalToTheBeat1.jpg?v=1618814365539)">
+      
+   <section style="max-width: 600px;" class="test-area">
+              <table style="display:none;font-size:1.2em">  
+                <thead >
+                  <tr>
+                    <th colspan="4">Your scores</th>
+                  </tr>
+                </thead>
+                <tbody style="color:white;">
+                <tr><td>Section</td><td>Percentage</td><td>Errors</td><td>Time</td></tr>
+                </tbody>  
+              </table> 
+            <div id="origin-text">
+                <p>How FAST!!! can you type </p>
+                <p>Type as you see (line break included)</p>
+                <p>Note: If you fall behind Big E, he won't wait for you</p>
+                <p>In fact, he'll put you up to his pace</p>
+                <p>Good luck, starts at around 00:18:00</p>
+            </div><!-- #origin-text -->
+            <div class="test-wrapper" >
+                <textarea id="test-area"  name="textarea" rows="6" placeholder="Your move"></textarea>
+            </div><!-- .test-wrapper -->
+            <div class="meta">
+                <section id="clock">
+                    <div style="color:white;" class="timer">00:00:00</div>
+                </section>
+                 <button class="penguin" style="display:none;" onclick="window.location.reload()">Go again?</button>
+                 <button class="penguin" title="He's tough" onclick="begin()">Begin?</button>
+            </div><!-- .meta -->
+        </section><!-- .test-area -->
+      </div>
+    </div>
+  </body>
+</html>
