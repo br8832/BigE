@@ -1,0 +1,325 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.masthead {
+    padding: 1em 2em;
+    background-color: #0D1B2E;
+    color: white;
+}
+
+.masthead h1 {
+    text-align: center;
+}
+
+.intro {
+    padding: 2em 2em;
+    color: #ffffff;
+    background: #429890;
+}
+
+
+.intro p,
+.test-area {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.test-area {
+    margin-bottom: 4em;
+    padding: 0 2em;
+/*   border: 2px solid blue; */
+}
+
+.test-wrapper {
+    border: 10px solid grey;
+    border-radius: 10px;
+}
+
+#origin-text {
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    background-color: #ededed;
+/*     border: 2px solid green; */
+/*     width: 80%; */
+}
+
+#origin-text p {
+    margin: 0;
+    padding-bottom: 0.75em;
+}
+
+.test-wrapper {
+    display: flex;
+    
+}
+
+.test-wrapper textarea {
+    flex: 1;
+}
+
+.meta {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+/*     border: 2px solid pink; */
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* developer tools showed a predefined user sheet for progress */
+progress {
+  margin: 0 auto;
+  appearance: none;
+  height: 20px;
+  width: 250px;
+}
+/* default progress bar containter*/
+progress::-webkit-progress-bar {
+  background-color: lightgray;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
+}
+
+#reset {
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #E95D0F;
+    background: white ;
+    border: 10px solid #E95D0F;
+}
+#reset:hover {
+    color: white;
+    background-color: #E95D0F;
+}
+#next {
+    display: none;
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F10AB3;
+    background: white ;
+    border: 10px solid #F10AB3;
+}
+#next:hover {
+    color: white;
+    background-color: #F10AB3;
+}
+.penguin {
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: blue;
+    background: white ;
+    border: 10px solid lightblue;
+}
+.penguin:hover {
+    color: white;
+    background-color: blue;
+}
+.extra-info{
+  margin: 10px auto 1em;
+  max-width: 55%;
+  display: flex;
+  
+}
+
+#wpm {
+  flex: 1;
+  font-size: 2em;
+  font-weight: bolder;
+  
+  text-align: left;
+}
+#error {
+  font-family: "Helvetica", sans-serif;
+  margin: auto;
+  font-weight: bold;
+  font-size: 2em;
+  color: red;
+  flex: 1;
+}
+#scores {
+  flex: 2;
+  margin: auto;
+  position: absolute;
+  left: 150px;
+  top: 400px;
+}
+table,
+td {
+    font-size: 1.25em;
+    padding: 0.25em;  
+}
+td {
+   border: 1px solid #333;
+}
+thead
+{
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+}
+.toggle {
+  display: none;
+  font-family: "Helvetica", sans-serif;
+}
+.flexbox {
+  display:flex;
+  justify-content:center
+}
+.flexbox-item{
+  flex: 1;
+  width:50%;
+}
+.BigE {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  animation-name: Enter;
+  animation-duration: 7s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+#visual-text{
+  margin: 1em 0;
+  padding: 1em 1em 0;
+  background-color: #ededed;
+  position: absolute;
+  left: 50px; 
+  display: none;
+
+}
+/* https://www.tutorialspoint.com/css/css_animation.htm 
+Website for simple keyframe animations, I mixed some seperate ones together 
+create the entrance of Big E*/
+
+@keyframes Enter {
+  0% {
+     transform: perspective(400px) rotateY(90deg);
+     opacity: 0;
+     }
+  40% {
+     transform: perspective(400px) rotateY(-10deg);
+     opacity: 0.4;
+      }
+  70% {
+     transform: perspective(400px) rotateY(10deg);
+     opacity: 0.7;
+      }
+  100% {
+     transform: perspective(400px) rotateY(0deg);
+     opacity: 1;
+      }
+} 
+
