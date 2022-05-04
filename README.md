@@ -1,5 +1,3 @@
-# Originally made April 2021
-
 Welcome to Glitch
 =================
 
