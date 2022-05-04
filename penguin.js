@@ -54,6 +54,8 @@ function penguinLines(index,start, end,target)
 }
 function begin() {
 //play the audio
+let bigE = document.querySelectorAll("img")[0]
+bigE.className= "BigE"
 let bgm = new Audio("https://cdn.glitch.com/0569e479-2ef8-4218-8629-458302c4ad4d%2F%5BArknights%20CN%5D%20Loyal%20To%20The%20Beat%20(April%20Fools%202021%20Emperor's%20Theme).mp3?v=1618812785220");
 bgm.volume = 0.35; // adjust this as you need, i like 0.5  
 bgm.play()
